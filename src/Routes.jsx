@@ -17,7 +17,7 @@ export default class Routes extends Component {
                 <Switch>
                     <Route path="/" exact component={Landing} />
 
-                    <Route path="/make" exact component={Make} />
+                    <Route path="/solve_and_make" exact component={Make} />
                     <Route path="/grow" exact component={Grow} />
                     <Route path="/mission" exact component={Mission} />
                     <Route path="/work_with_us" exact component={Work_With_Us} />

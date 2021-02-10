@@ -5,7 +5,7 @@ class Make extends React.Component {
    render() {
       return (
         <div>
-          <h1>Make and Develop</h1>
+          <h1>SOLVE and MAKE</h1>
         </div>
       )
    }

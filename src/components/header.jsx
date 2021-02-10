@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../assets/logo.svg';
-import { Link } from 'react-router-dom';
+import { Navbar,Nav,NavDropdown  } from 'react-bootstrap';
+import Grow from '../pages/grow';
 
 import './header.css'
 
@@ -9,42 +10,29 @@ class Header extends React.Component {
 
    render() {
       return (
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="/">
-            <img src={Logo} width="180" height="58" alt="evologic logo"/>
-          </a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-          </button>
+        <Navbar bg="light" expand="lg">
 
-          <div class="collapse navbar-collapse navigation-items" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="/make">MAKE and DEVELOP </a>
-                <ul class="submenu">
-                  <li><a href="">Make DIFFERENT</a></li>
-                  <li><a href="">Develop DIFFERENT</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/grow">Grow DIFFERENT  </a>
-                <ul class="submenu">
-                    <li><a href="#">Plants</a></li>
-                    <li><a href="#">Fungi</a></li>
-                    <li><a href="#">Bacteria</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/mission">MISSION and VISION </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/work_with_us">WORK with US </a>
-              </li>
-            </ul>
-          </div>
+          <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-        </nav>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ml-auto">
+              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+
+          </Navbar.Collapse>
+
+        </Navbar>
+
       )
    }
 }
