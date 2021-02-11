@@ -1,12 +1,12 @@
 import React from 'react';
 
-class Grow extends React.Component {
+class Ip extends React.Component {
    render() {
       return (
         <h1>
-        Grow DIFFERENT
+        IP/Risk Sharing
         </h1>
       )
    }
 }
-export default Grow;
+export default Ip;

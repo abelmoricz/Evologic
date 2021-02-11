@@ -1,12 +1,12 @@
 import React from 'react';
 
-class Grow extends React.Component {
+class Make extends React.Component {
    render() {
       return (
         <h1>
-        Grow DIFFERENT
+        Make
         </h1>
       )
    }
 }
-export default Grow;
+export default Make;

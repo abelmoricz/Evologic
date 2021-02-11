@@ -1,12 +1,12 @@
 import React from 'react';
 
-class Grow extends React.Component {
+class Fungi extends React.Component {
    render() {
       return (
         <h1>
-        Grow DIFFERENT
+        Fungi
         </h1>
       )
    }
 }
-export default Grow;
+export default Fungi;

@@ -6,3 +6,17 @@ html{
 body{
   font-family: Poppins;
 }
+
+
+h1{
+  font-size: 48pt;
+}
+
+p{
+  font-size: 18pt;
+  font-weight: lighter;
+}
+
+h1, h3, p{
+  text-align: center;
+}

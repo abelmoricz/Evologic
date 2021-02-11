@@ -3,9 +3,9 @@ import React from 'react';
 class Work_With_Us extends React.Component {
    render() {
       return (
-        <div>
+        <h1>
         Work with us
-        </div>
+        </h1>
       )
    }
 }

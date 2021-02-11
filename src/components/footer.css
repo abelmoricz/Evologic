@@ -1,0 +1,32 @@
+
+
+.footer{
+  height: 500px;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom_navigation{
+  border-top: solid black 1px;
+  background-color: lightgrey;
+  display:flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.bottom_navigation a{
+  color: black;
+}
+.footer a{
+  text-decoration: underline;
+  color: black;
+}
+
+.contact{
+  text-align: center;
+}
+
+.footer img{
+  width:20%;
+}

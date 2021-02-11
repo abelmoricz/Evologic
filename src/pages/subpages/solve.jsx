@@ -1,12 +1,12 @@
 import React from 'react';
 
-class Grow extends React.Component {
+class Solve extends React.Component {
    render() {
       return (
         <h1>
-        Grow DIFFERENT
+        Solve
         </h1>
       )
    }
 }
-export default Grow;
+export default Solve;

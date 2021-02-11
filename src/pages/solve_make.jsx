@@ -1,5 +1,5 @@
 import React from 'react';
-import './make.css';
+import './solve_make.css';
 
 class Make extends React.Component {
    render() {
