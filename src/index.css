@@ -17,6 +17,15 @@ p{
   font-weight: lighter;
 }
 
-h1, h3, p{
+h1, h3, h4, p{
   text-align: center;
 }
+h3{
+  font-size: 36pt;
+  font-weight: lighter;
+}
+
+.red{ color: #CF4C43; }
+.green{ color: #238223; }
+.brown{ color: #542D2F; }
+.purple{ color: #433166; }

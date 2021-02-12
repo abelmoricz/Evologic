@@ -26,6 +26,8 @@ import News from "./pages/subpages/news";
 import Ip from "./pages/subpages/ip";
 import Fee from "./pages/subpages/fee";
 
+import Impressum from "./pages/impressum";
+
 
 
 function App() {
@@ -101,9 +103,13 @@ function App() {
         <Route path="/work_with_us/news" exact component={News} />
         <Route path="/work_with_us/ip_sharing" exact component={Ip} />
         <Route path="/work_with_us/fee_for_service" exact component={Fee} />
+
+        <Route path="/impressum" exact component={Impressum} />
+
+
+        <Footer />
       </Router>
 
-      <Footer />
     </div>
   );
 }
