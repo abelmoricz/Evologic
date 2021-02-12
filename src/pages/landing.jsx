@@ -16,38 +16,45 @@ class Landing extends React.Component {
 
    render() {
       return (
-        <div className="landing">
+        <div>
 
           <h1 className="brown"> MISSION </h1>
           <h3>“Make Science based Biologicals economically feasible”</h3>
           <p> In Furtherance of the UN Sustainability Development Goals </p>
-          <div className="row">
-            <img className="col-3" src={goal2} />
-            <img className="col-3" src={goal6} />
-            <img className="col-3" src={goal12} />
-            <img className="col-3" src={goal15} />
+          <div className="row container-fluid">
+            <img className="col-sm-3" src={goal2} />
+            <img className="col-sm-3" src={goal6} />
+            <img className="col-sm-3" src={goal12} />
+            <img className="col-sm-3" src={goal15} />
           </div>
 
           <div className="my-10">
             <h1 className="red"> SOLVE and MAKE </h1>
             <p className="col-8 offset-2"> Egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante
             in nibh mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo elit at imperdiet </p>
-            <div className="row">
-              <h1 className="col-2 offset-2">98%</h1>
-              <h1 className="col-2">22%</h1>
-              <h1 className="col-2">17%</h1>
-              <h1 className="col-2">2/3</h1>
-            </div>
             <div className="row text-center">
-              <h5 className="col-2 offset-2">quisque sagittis purus sit</h5>
-              <h5 className="col-2">consectetur a erat nam</h5>
-              <h5 className="col-2">nibh nisl condimentum id</h5>
-              <h5 className="col-2">ipsum dolor sit amet</h5>
+              <div className="col-lg-3">
+                <h1>98%</h1>
+                <h5>quisque sagittis purus sit</h5>
+              </div>
+              <div className="col-lg-3">
+                <h1>22%</h1>
+                <h5>consectetur a erat nam</h5>
+              </div>
+              <div className="col-md-3">
+                <h1>17%</h1>
+                <h5>nibh nisl condimentum id</h5>
+              </div>
+              <div className="col-md-3">
+                <h1>2/3</h1>
+                <h5>ipsum dolor sit amet</h5>
+              </div>
             </div>
+
           </div>
 
           <div className="row">
-            <div className="col div-to-align">
+            <div className="col text_box">
               <h1 className="green"> Grow DIFFERENT </h1>
               <p className=""> Sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa</p>
             </div>

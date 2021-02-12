@@ -27,7 +27,7 @@ import Ip from "./pages/subpages/ip";
 import Fee from "./pages/subpages/fee";
 
 import Impressum from "./pages/impressum";
-
+import ScrollToTop from './components/scrollToTop';
 
 
 function App() {
@@ -35,8 +35,8 @@ function App() {
     <div id="app" className="App">
 
 
-      <Router>
-
+      <Router onUpdate={() => window.scrollTo(0, 0)}>
+      <ScrollToTop />
 
       <Navbar expand="xl">
 

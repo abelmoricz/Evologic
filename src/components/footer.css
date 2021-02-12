@@ -28,6 +28,7 @@
 
 .contact{
   text-align: center;
+  font-size: calc(0.375rem + 0.5vw);
 }
 
 .footer img{

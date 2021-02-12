@@ -9,22 +9,20 @@ import Solve_Make from "../pages/solve_make";
 import Mission_Vision from "../pages/mission_vision";
 import Work_With_Us from "../pages/work_with_us";
 
+
 import './footer.css'
 
 
 class Footer extends React.Component {
 
-  scroll_to_top(){
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-  }
-
-
    render() {
+
+
+
       return (
         <div>
 
-          <div className="footer">
+          <div className=" footer">
 
             <img src={Logo} width="180"/>
             <div className="contact">Evologic Technologies Office<br/>
@@ -39,13 +37,14 @@ class Footer extends React.Component {
             <img src={Map} width="368"/>
           </div>
 
-
             <Nav className="bottom_navigation" >
-              <NavLink to="/solve_and_make" onClick={this.scroll_to_top}>SOLVE and MAKE</NavLink>
-              <NavLink to="/grow" onClick={this.scroll_to_top}>Grow DIFFERENT</NavLink>
-              <NavLink to="/mission" onClick={this.scroll_to_top}>MISSION and VISION</NavLink>
-              <NavLink to="/work_with_us" onClick={this.scroll_to_top}>WORK with US</NavLink>
-              <NavLink to="/impressum" onClick={this.scroll_to_top}>Impressum</NavLink>
+
+              <NavLink  to="/solve_and_make">SOLVE and MAKE</NavLink>
+              <NavLink to="/grow">Grow DIFFERENT</NavLink>
+              <NavLink to="/mission">MISSION and VISION</NavLink>
+              <NavLink to="/work_with_us">WORK with US</NavLink>
+              <NavLink to="/impressum">Impressum</NavLink>
+
             </Nav>
 
 

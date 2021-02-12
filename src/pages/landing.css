@@ -7,23 +7,18 @@
   padding-left: 8px;
 }
 
-
 .my-10{
   margin-top: 25%;
   margin-bottom: 25%;
 }
 
-.div-to-align {
-    width: 75%;
-    padding:5%;
-
+.text_box{
+  padding: 20px;
 }
 
-@media (max-width: 1200px){
-  h1 {
-    font-size: calc(1.375rem + 1.5vw);
-  }
-  p {
-    font-size: calc(0.375rem + 0.5vw);
-  }
+p{
+  font-size: calc(0.375rem + 1vw);
+}
+h1{
+  font-size: calc(0.375rem + 3.5vw);
 }
