@@ -1,12 +1,25 @@
-html{
+@font-face{
   font-family: 'Poppins';
-
+  src: url('./assets/Poppins/Poppins-Light.ttf');
+  font-weight: lighter;
 }
 
-body{
-  font-family: Poppins;
+@font-face{
+    font-family: 'Poppins';
+  src: url('./assets/Poppins/Poppins-Bold.ttf');
+  font-weight: bolder;
 }
 
+.btn-primary{
+  color: white !important;
+  background-color: #433166;
+  border-radius: 25px;
+  text-align: center;
+}
+.btn-primary:hover{
+  background-color: #433166;
+  opacity: 0.5;
+}
 
 h1{
   font-size: 48pt;

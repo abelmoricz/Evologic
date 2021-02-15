@@ -1,0 +1,33 @@
+.thumbnail img{
+  width:100%;
+  height: auto;
+}
+
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+    display: relative;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 30px black;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.thumbnail:hover .image{
+    transition: 0.3s;
+    transform:scale(1.05);
+    opacity: 0.7;
+}
+
+.caption {
+  font-size: 64pt;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}

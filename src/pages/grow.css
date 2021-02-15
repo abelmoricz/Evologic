@@ -1,14 +1,14 @@
-.grow{
-
-}
 
 
 .bg_image_1{
-
 
   height: 420vw;
   background-image: url('../assets/grow_bg copy.jpg');
   background-repeat: no-repeat;
     background-size: 100%;
 
+}
+
+h3{
+  font-size: calc(0.3rem + 3.5vw);
 }
