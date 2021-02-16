@@ -1,0 +1,24 @@
+
+.mission .col-xl{
+  display: flex;
+  color: black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mission a{
+  color: black;
+}
+
+.mission .text_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission .col-xl:hover{
+  cursor: pointer;
+
+}

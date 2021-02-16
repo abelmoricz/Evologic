@@ -1,0 +1,12 @@
+.text_image .image{
+  border: 1px solid black;
+  height: 350px;
+
+}
+
+.text_image .text_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

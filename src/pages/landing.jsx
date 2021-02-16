@@ -112,7 +112,7 @@ class Landing extends React.Component {
             </div>
 
             <div className="row">
-            <NavLink to="/mission" align="" class="col-1 my-5 mx-auto btn-lg btn-primary my-5">
+            <NavLink to="/mission" class="col-2 mx-auto my-5 btn-lg btn-primary">
             More
             </NavLink>
             </div>

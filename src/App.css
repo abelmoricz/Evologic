@@ -7,20 +7,28 @@ ul{
 a{
   text-decoration: none;
 }
-.dropdown a{
-  margin-left: 50px;
-  margin-right: 50px;
+.dropdown .main_item{
+  color: black;
+  font-size: 16pt;
+  margin-left: 40px;
+  margin-right: 40px;
   color: black;
 }
 a:hover{
-  color: black;
   text-align: center;
   text-decoration: none;
 }
 
-.btn{
-  padding:0;
+.n_solve,.n_grow,.n_mission,.n_work{
+  color: black;
 }
+
+.n_solve:hover{ color: #CF4C43;}
+.n_grow:hover{ color: #238223;}
+.n_mission:hover{ color: #542D2F; }
+.n_work:hover{ color: #433166; }
+
+
 
 .mydropdowncss:hover .dropdown-menu {
   display:flex;
@@ -31,10 +39,10 @@ a:hover{
    margin: 40px;
  }
  .ddm-2 a{
-   margin: 12px;
+   margin: 18px;
  }
  .ddm-3 a{
-   margin: 30px;
+   margin: 20px;
  }
 
 .navbar{

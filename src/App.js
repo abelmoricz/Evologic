@@ -51,33 +51,33 @@ function App() {
           <ul class="navbar-nav">
             <li class="nav-item">
               <div class="dropdown mydropdowncss">
-              	<NavLink to="/solve_and_make" activeStyle={{fontWeight: "bold",color: "#CF4C43"}} class="btn" data-toggle="dropdown">SOLVE and MAKE</NavLink>
+              	<NavLink to="/solve_and_make" activeStyle={{fontWeight: "bold",color: "#CF4C43"}} className=" n_solve main_item" data-toggle="dropdown">SOLVE and MAKE</NavLink>
                 <ul class="dropdown-menu ddm-1">
-                  <li><NavLink to="/solve_and_make/solve">Solve</NavLink></li>
-                  <li><NavLink to="/solve_and_make/make">Make</NavLink></li>
+                  <li><NavLink className="solve" to="/solve_and_make/solve">Solve</NavLink></li>
+                  <li><NavLink className="solve" to="/solve_and_make/make">Make</NavLink></li>
                 </ul>
               </div>
             </li>
 
             <li class="nav-item">
               <div class="dropdown mydropdowncss">
-              	<NavLink to="/grow" activeStyle={{fontWeight: "bold",color: "#238223"}} class="btn" data-toggle="dropdown">Grow DIFFERENT</NavLink>
+              	<NavLink to="/grow" activeStyle={{fontWeight: "bold",color: "#238223"}} className=" n_grow main_item" data-toggle="dropdown">Grow DIFFERENT</NavLink>
                   <ul class="dropdown-menu ddm-2">
-                  	<li><NavLink to="/grow/plants">Plants</NavLink></li>
-                    <li><NavLink to="/grow/fungi">Fungi</NavLink></li>
-                    <li><NavLink to="/grow/bacteria">Bacteria</NavLink></li>
+                  	<li><NavLink className="grow" to="/grow/plants">Plants</NavLink></li>
+                    <li><NavLink className="grow" to="/grow/fungi">Fungi</NavLink></li>
+                    <li><NavLink className="grow" to="/grow/bacteria">Bacteria</NavLink></li>
                   </ul>
               </div>
             </li>
 
-              <li class="nav-item"><div className="dropdown"><NavLink activeStyle={{fontWeight: "bold",color: "#542D2F"}} to="/mission">MISSION and VISION</NavLink></div></li>
+              <li class="nav-item"><div className="dropdown"><NavLink className="n_mission main_item" activeStyle={{fontWeight: "bold",color: "#542D2F"}} to="/mission">MISSION and VISION</NavLink></div></li>
 
             <li class="nav-item">
               <div class="dropdown mydropdowncss">
-              	<NavLink to="/work_with_us" activeStyle={{fontWeight: "bold",color: "#433166"}} class="btn" data-toggle="dropdown">WORK with US</NavLink>
+              	<NavLink to="/work_with_us" activeStyle={{fontWeight: "bold",color: "#433166"}} className="n_work main_item" data-toggle="dropdown">WORK with US</NavLink>
                   <ul class="dropdown-menu ddm-3">
-                  	<li><NavLink to="/work_with_us/about_us">About Us</NavLink></li>
-                    <li><NavLink to="/work_with_us/news">News</NavLink></li>
+                  	<li><NavLink className="work align-center" to="/work_with_us/about_us">About Us</NavLink></li>
+                    <li><NavLink className="work" to="/work_with_us/news">News</NavLink></li>
                   </ul>
               </div>
               </li>
