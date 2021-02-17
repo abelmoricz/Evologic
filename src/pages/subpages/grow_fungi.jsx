@@ -14,8 +14,8 @@ class Fungi extends React.Component {
           morbi leo urna molestie at elementum eu facilisis</p>
           <h1 className="green">Our Projects</h1>
           <div className="row mb-10">
-            <div className="col-md-6" ><NavLink to="/solve_and_make/solve"><Image img={phoma} text="Phoma" /></NavLink></div>
-            <div className="col-md-6" ><NavLink to="/solve_and_make/make"><Image img={mycoproscale} text="MycoProScale" /></NavLink></div>
+            <div className="col-md-6" ><NavLink to="/grow/fungi/phoma"><Image img={phoma} text="Phoma" /></NavLink></div>
+            <div className="col-md-6" ><NavLink to="/grow/fungi"><Image img={mycoproscale} text="MycoProScale" /></NavLink></div>
           </div>
 
         </div>
