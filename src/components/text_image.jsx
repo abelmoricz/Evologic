@@ -18,7 +18,7 @@ class Text_Image extends React.Component {
             <p>Gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque gravida in fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor.</p>
           </div>
           <div className="image col-md-6">
-            <img alt="image"/>
+            <img src={this.props.img} alt="image"/>
           </div>
         </div>
       )
@@ -26,12 +26,15 @@ class Text_Image extends React.Component {
     if(this.props.orientation == "text_right"){
       return (
         <div className=" text_image row py-5">
-          <div className="image col-md">
-            <img alt="image"/>
+          <div className="d-none d-md-block image col-md-6">
+            <img src={this.props.img} alt="image"/>
           </div>
-          <div className="text_box col-md">
+          <div className="text_box col-md-6">
             <h3 className={`p-1 ${this.props.color}`}>{this.props.title}</h3>
             <p>Gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque gravida in fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor.</p>
+          </div>
+          <div className="d-block d-md-none image col-md-6">
+            <img src={this.props.img} alt="image"/>
           </div>
 
         </div>

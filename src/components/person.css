@@ -1,0 +1,18 @@
+.person p{
+  text-align: left;
+  font-size: 14pt;
+}
+
+.person .text-box{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.person .image{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}

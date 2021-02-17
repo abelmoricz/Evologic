@@ -37,6 +37,19 @@ h3{
   font-size: 36pt;
   font-weight: lighter;
 }
+h4{
+  font-size: 18pt;
+  font-weight: lighter;
+}
+
+hr{
+  opacity: 100%;
+  border-top: 2px solid;
+  width: 50%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 
 .red{ color: #CF4C43; }
 .green{ color: #238223; }

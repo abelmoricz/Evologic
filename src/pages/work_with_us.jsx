@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from '../assets/people/bahar.png'
+import profile from '../assets/work_with_us/bahar.png'
 import { NavLink } from 'react-router-dom';
 import strain from '../assets/value_chain/strain.svg';
 
@@ -15,7 +15,6 @@ class Work_With_Us extends React.Component {
        width: 200 + 'px',
        height: 200 + 'px'
      }
-
 
 
       return (

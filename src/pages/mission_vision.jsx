@@ -87,36 +87,36 @@ class Mission_Vision extends React.Component {
 
           <h3 id="value_chain" className="py-5 brown">Value Chain Fit</h3>
 
-          <div className="row m-5 " align="middle">
-            <div className="col-xl" onClick={ this.change_to_strain } >
-              <img src={strain} width="180" align="center"/>
+          <div className="row m-md-5 " align="middle">
+            <div className="col" onClick={ this.change_to_strain } >
+              <img className="img-fluid w-100" src={strain} align="center"/>
               <h5>Strain</h5>
             </div>
-            <div className="col-xl" onClick={ this.change_to_production } >
-              <img src={production} width="220"/>
+            <div className="col" onClick={ this.change_to_production } >
+              <img className="img-fluid w-100" src={production} width="220"/>
               <h5>Production</h5>
             </div>
-            <div class="col-xl" onClick={ this.change_to_formulation } >
-              <img src={formulation} width="220"/>
+            <div class="col" onClick={ this.change_to_formulation } >
+              <img className="img-fluid w-100" src={formulation} width="220"/>
               <h5>Formulation</h5>
             </div>
-            <div className="col-xl" onClick={ this.change_to_application } >
-              <img src={application} width="180"/>
+            <div className="col" onClick={ this.change_to_application } >
+              <img className="img-fluid w-100" src={application} width="180"/>
               <h5>Application</h5>
             </div>
-            <a class="col-xl" onClick={ this.change_to_distribution } >
-              <img src={distribution} width="180"/>
+            <a class="col" onClick={ this.change_to_distribution } >
+              <img className="img-fluid w-100" src={distribution} width="180"/>
               <h5>Distribution</h5>
             </a>
           </div>
 
           <div className="row mt-5 mb-10" align="center">
-            <div className="col-md-4">
-              <img className="offset-md-3"src={ this.state.image } width="300"/>
+            <div className="d-none d-lg-block col-4">
+              <img className="offset-lg-3"src={ this.state.image } width="300"/>
             </div>
-            <div className="col-md-8 text_box" >
+            <div className="col-lg-8 text_box" >
               <h3 className="brown"> { this.state.title } </h3>
-              <p className="mx-5">{ this.state.description }</p>
+              <p className="mx-lg-5">{ this.state.description }</p>
             </div>
           </div>
 

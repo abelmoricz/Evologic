@@ -18,7 +18,10 @@
   justify-content: center;
 }
 
-.mission .col-xl:hover{
+.mission .col:hover{
   cursor: pointer;
+}
 
+.mission h5{
+  font-size: calc(0.25rem + 1vw);
 }

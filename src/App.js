@@ -11,6 +11,7 @@ import Landing from "./pages/landing"
 import Grow from "./pages/grow";
 import Plants from "./pages/subpages/grow_plants";
 import Fungi from "./pages/subpages/grow_fungi";
+import Phoma from "./pages/subpages/phoma";
 import Bacteria from "./pages/subpages/grow_bacteria";
 
 
@@ -50,8 +51,8 @@ function App() {
 
           <ul class="navbar-nav">
             <li class="nav-item">
-              <div class="dropdown mydropdowncss">
-              	<NavLink to="/solve_and_make" activeStyle={{fontWeight: "bold",color: "#CF4C43"}} className=" n_solve main_item" data-toggle="dropdown">SOLVE and MAKE</NavLink>
+              <div class="n_solve dropdown mydropdowncss">
+              	<NavLink to="/solve_and_make" activeStyle={{fontWeight: "bold",color: "#CF4C43"}} className="  main_item" data-toggle="dropdown">SOLVE and MAKE</NavLink>
                 <ul class="dropdown-menu ddm-1">
                   <li><NavLink className="solve" to="/solve_and_make/solve">Solve</NavLink></li>
                   <li><NavLink className="solve" to="/solve_and_make/make">Make</NavLink></li>
@@ -60,8 +61,8 @@ function App() {
             </li>
 
             <li class="nav-item">
-              <div class="dropdown mydropdowncss">
-              	<NavLink to="/grow" activeStyle={{fontWeight: "bold",color: "#238223"}} className=" n_grow main_item" data-toggle="dropdown">Grow DIFFERENT</NavLink>
+              <div class="n_grow dropdown mydropdowncss">
+              	<NavLink to="/grow" activeStyle={{fontWeight: "bold",color: "#238223"}} className="  main_item" data-toggle="dropdown">Grow DIFFERENT</NavLink>
                   <ul class="dropdown-menu ddm-2">
                   	<li><NavLink className="grow" to="/grow/plants">Plants</NavLink></li>
                     <li><NavLink className="grow" to="/grow/fungi">Fungi</NavLink></li>
@@ -70,11 +71,11 @@ function App() {
               </div>
             </li>
 
-              <li class="nav-item"><div className="dropdown"><NavLink className="n_mission main_item" activeStyle={{fontWeight: "bold",color: "#542D2F"}} to="/mission">MISSION and VISION</NavLink></div></li>
+              <li class="nav-item"><div className="n_mission dropdown"><NavLink className=" main_item" activeStyle={{fontWeight: "bold",color: "#542D2F"}} to="/mission">MISSION and VISION</NavLink></div></li>
 
             <li class="nav-item">
-              <div class="dropdown mydropdowncss">
-              	<NavLink to="/work_with_us" activeStyle={{fontWeight: "bold",color: "#433166"}} className="n_work main_item" data-toggle="dropdown">WORK with US</NavLink>
+              <div class="n_work dropdown mydropdowncss">
+              	<NavLink to="/work_with_us" activeStyle={{fontWeight: "bold",color: "#433166"}} className=" main_item" data-toggle="dropdown">WORK with US</NavLink>
                   <ul class="dropdown-menu ddm-3">
                   	<li><NavLink className="work align-center" to="/work_with_us/about_us">About Us</NavLink></li>
                     <li><NavLink className="work" to="/work_with_us/news">News</NavLink></li>
@@ -94,6 +95,7 @@ function App() {
         <Route path="/grow" exact component={Grow} />
         <Route path="/grow/plants" exact component={Plants} />
         <Route path="/grow/fungi" exact component={Fungi} />
+        <Route path="/grow/fungi/phoma" exact component={Phoma} />
         <Route path="/grow/bacteria" exact component={Bacteria} />
 
         <Route path="/mission" exact component={Mission_Vision} />

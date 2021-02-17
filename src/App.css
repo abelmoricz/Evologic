@@ -6,48 +6,69 @@ ul{
 }
 a{
   text-decoration: none;
+  color: black;
 }
 .dropdown .main_item{
   color: black;
   font-size: 16pt;
   margin-left: 40px;
   margin-right: 40px;
-  color: black;
+
 }
 a:hover{
   text-align: center;
   text-decoration: none;
 }
 
-.n_solve,.n_grow,.n_mission,.n_work{
-  color: black;
-}
 
-.n_solve:hover{ color: #CF4C43;}
-.n_grow:hover{ color: #238223;}
-.n_mission:hover{ color: #542D2F; }
-.n_work:hover{ color: #433166; }
 
+.n_solve:hover .main_item{ color: #CF4C43; }
+.n_solve a:hover{ color: #CF4C43; }
+.n_solve:hover .dropdown-menu{ border: none; border-bottom: 3px solid #CF4C43; }
+
+.n_grow:hover .main_item{ color: #238223; }
+.n_grow a:hover{ color: #238223; }
+.n_grow:hover .dropdown-menu{ border: none; border-bottom: 3px solid #238223; }
+
+.n_mission:hover .main_item{ color: #542D2F; }
+.n_mission a:hover{ color: #542D2F; }
+.n_mission:hover .dropdown-menu{ border: none; border-bottom: 3px solid #542D2F; }
+
+.n_work:hover .main_item{ color: #433166; }
+.n_work a:hover{ color: #433166; }
+.n_work:hover .dropdown-menu{ border: none; border-bottom: 3px solid #433166; }
 
 
 .mydropdowncss:hover .dropdown-menu {
   display:flex;
-    margin-top: 0;
-    border: 0;
+  margin-top: 0;
+  border-radius: 0;
+
  }
  .ddm-1 a{
-   margin: 40px;
+   margin: 45px;
  }
  .ddm-2 a{
-   margin: 18px;
+   margin: 19px;
  }
  .ddm-3 a{
-   margin: 20px;
+   margin: 28px;
  }
 
-.navbar{
-  margin-left: 104px;
-  margin-right: 104px;
-  margin-top: 52px;
-  margin-bottom: 156px;
+ @media only screen and (min-width: 992px) {
+  .navbar{
+    margin-left: 104px;
+    margin-right: 104px;
+    margin-top: 52px;
+    margin-bottom: 156px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+ .navbar{
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
 }
