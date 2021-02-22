@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face{
+  font-family: 'Poppins';
+  src: url('./assets/Poppins/Poppins-Light.ttf');
+  font-weight: lighter;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face{
+    font-family: 'Poppins';
+  src: url('./assets/Poppins/Poppins-Bold.ttf');
+  font-weight: bolder;
+}
+
+.btn-primary{
+  color: white !important;
+  background-color: #433166;
+  border-radius: 25px;
+  text-align: center;
+}
+.btn-primary:hover{
+  background-color: #433166;
+  opacity: 0.5;
+}
+
+a{ color: black; }
+
+h1, h3, h4, p{
+  text-align: center;
+}
+
+h1{ font-size: 48pt; }
+.h1{ font-size: 40pt; } /*Work_with_us title for mobile so it doens't hang off the page*/
+
+p{ font-size: 18pt; font-weight: lighter; }
+h3{ font-size: 36pt; font-weight: lighter; }
+h4{ font-size: 26pt; font-weight: lighter; }
+h5{ font-size: 18pt; font-weight: lighter; }
+
+hr{
+  opacity: 100%;
+  border-top: 2px solid;
+  width: 50%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.red{ color: #CF4C43; }
+.green{ color: #238223; }
+.brown{ color: #542D2F; }
+.purple{ color: #433166; }
+
+.my-10{
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+.mt-10{
+  margin-top: 20%;
+}
+.mb-10{
+  margin-bottom: 20%;
 }

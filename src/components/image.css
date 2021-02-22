@@ -1,0 +1,64 @@
+.thumbnail img{
+  width:100%;
+}
+
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+
+    display: relative;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px black;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.thumbnail:hover .image{
+    transition: 0.3s;
+    transform:scale(1.05);
+    opacity: 0.5;
+}
+.caption {
+  font-size: 48pt;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.caption-2 {
+  font-size: 48pt;
+  padding: 2%;
+  line-height: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.thumbnail:hover .image-2{
+    transition: 0.3s;
+    transform:scale(1.05);
+    opacity: 0.1;
+}
+.content{
+  display: none;
+  color: black;
+}
+
+.thumbnail:hover .content{
+  display: block;
+  color: black;
+}
+.thumbnail:hover .caption-2{
+  display: none;
+}

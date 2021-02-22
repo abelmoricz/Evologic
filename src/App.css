@@ -1,38 +1,89 @@
-.App {
+li{
+  display: inline-block;
+}
+ul{
+  margin-left: auto;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.dropdown .main_item{
+  color: black;
+  font-size: 16pt;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+@media only screen and (max-width: 1400px) {
+  .dropdown .main_item{
+    color: black;
+    font-size: 15pt;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+a:hover{
   text-align: center;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.n_solve:hover .main_item{ color: #CF4C43; }
+.n_solve a:hover{ color: #CF4C43; }
+.n_solve:hover .dropdown-menu{ border: none; border-bottom: 3px solid #CF4C43; }
+
+.n_grow:hover .main_item{ color: #238223; }
+.n_grow a:hover{ color: #238223; }
+.n_grow:hover .dropdown-menu{ border: none; border-bottom: 3px solid #238223; }
+
+.n_mission:hover .main_item{ color: #542D2F; }
+.n_mission a:hover{ color: #542D2F; }
+.n_mission:hover .main_item{ border: none; border-bottom: 3px solid #542D2F; }
+
+.n_work:hover .main_item{ color: #433166; }
+.n_work a:hover{ color: #433166; }
+.n_work:hover .dropdown-menu{ border: none; border-bottom: 3px solid #433166; }
+
+
+.mydropdowncss:hover .dropdown-menu {
+  display:flex;
+  margin-top: 0;
+  border-radius: 0;
+
+ }
+ .ddm-1 a{
+   margin: 35px;
+ }
+ .ddm-2 a{
+   margin: 19px;
+ }
+ .ddm-3 a{
+   margin: 19px;
+ }
+
+ .text_box{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+
+ @media only screen and (min-width: 992px) {
+  .navbar{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 52px;
+    margin-bottom: 104px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (max-width: 992px) {
+ .navbar{
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
 }
