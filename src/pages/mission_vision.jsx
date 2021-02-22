@@ -8,6 +8,7 @@ import formulation from '../assets/value_chain/formulation.svg';
 import formulation_clean from '../assets/value_chain/formulation_blank.svg';
 import application from '../assets/value_chain/application.svg';
 import distribution from '../assets/value_chain/distribution.svg';
+import field from '../assets/value_chain/field.svg';
 
 import goal2 from '../assets/un/img-goal-2.jpg';
 import w_goal2 from '../assets/un/white-2.png';
@@ -61,6 +62,12 @@ class Mission_Vision extends React.Component {
                     image: distribution
     });
   }
+  change_to_field = () => {
+    this.setState({ title: "Field",
+                    description: "Augue interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt",
+                    image: field
+    });
+  }
 
 
 
@@ -96,16 +103,20 @@ class Mission_Vision extends React.Component {
               <h5>Production</h5>
             </div>
             <div class="col" onClick={ this.change_to_formulation } >
-              <NavLink to=""><img className="w-100" src={formulation} width="220"/>
-              <h5>Formulation</h5></NavLink>
+              <img className="w-100" src={formulation} width="220"/>
+              <h5>Formulation</h5>
             </div>
             <div className="col" onClick={ this.change_to_application } >
-              <NavLink to=""><img className="w-100" src={application} width="180"/>
-              <h5>Application</h5></NavLink>
+              <img className="w-100" src={application} width="180"/>
+              <h5>Application</h5>
             </div>
             <div class="col" onClick={ this.change_to_distribution } >
-              <NavLink to=""><img className="w-100" src={distribution} width="180"/>
-              <h5>Distribution</h5></NavLink>
+              <img className="w-100" src={distribution} width="180"/>
+              <h5>Distribution</h5>
+            </div>
+            <div class="col" onClick={ this.change_to_field } >
+              <img className="w-100" src={field} width="180"/>
+              <h5>Distribution</h5>
             </div>
           </div>
           </div>

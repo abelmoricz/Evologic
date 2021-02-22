@@ -1,9 +1,5 @@
-li{
-  display: inline-block;
-}
-ul{
-  margin-left: auto;
-}
+li{ display: inline-block; }
+ul{ margin-left: auto; }
 a{
   text-decoration: none;
   color: black;
@@ -27,8 +23,6 @@ a:hover{
   text-align: center;
   text-decoration: none;
 }
-
-
 
 .n_solve:hover .main_item{ color: #CF4C43; }
 .n_solve a:hover{ color: #CF4C43; }
@@ -71,16 +65,17 @@ a:hover{
  }
 
  @media only screen and (min-width: 992px) {
-  .navbar{
+  .navbar_content{
+    display: flex;
     margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 52px;
-    margin-bottom: 104px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
 @media only screen and (max-width: 992px) {
- .navbar{
+ .navbar_content{
    margin-left: 10px;
    margin-right: 10px;
    margin-top: 10px;

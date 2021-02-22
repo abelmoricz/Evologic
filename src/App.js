@@ -54,8 +54,8 @@ render() {
       <Router onUpdate={() => window.scrollTo(0, 0)}>
       <ScrollToTop />
 
-      <Navbar expand="xl">
-
+      <Navbar className="sticky-top bg-white" expand="xl">
+        {/*<div className="navbar_content">*/}
         <Navbar.Brand>
           <NavLink to="/"><img src={Logo} width="180"/></NavLink>
         </Navbar.Brand>
@@ -100,8 +100,9 @@ render() {
           </ul>
 
         </Navbar.Collapse>
-
+        {/*</div>*/}
       </Navbar>
+
 
         <Route path="/" exact component={Landing} />
         <Route path="/solve_and_make" exact component={Solve_Make} />

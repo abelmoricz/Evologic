@@ -18,6 +18,7 @@ import production from '../assets/value_chain/production.svg';
 import formulation from '../assets/value_chain/formulation.svg';
 import application from '../assets/value_chain/application.svg';
 import distribution from '../assets/value_chain/distribution.svg';
+import field from '../assets/value_chain/field.svg';
 
 import Image from '../components/image';
 
@@ -108,6 +109,10 @@ class Landing extends React.Component {
               <NavLink to="/mission"  class="col-md">
                 <img src={distribution} width="180"/>
                 <h5>Distribution</h5>
+              </NavLink>
+              <NavLink to="/mission"  class="col-md">
+                <img src={field} width="180"/>
+                <h5>Field</h5>
               </NavLink>
             </div>
             {/*BUTTON*/}
