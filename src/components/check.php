@@ -12,26 +12,20 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $errors[] = 'Email is empty';
   } else {
     $email = $_POST['email'];
+
     // validating the email
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors[] = 'Invalid email';
     }
   }
-
   if (empty($_POST['message'])) {
     $errors[] = 'Message is empty';
   } else {
     $message = $_POST['message'];
   }
-
-  if (empty($_POST['message'])) {
-    $name = "No Name";
-  } else {
-    $name = $_POST['name'];
-  }
-
   if (empty($errors)) {
     $date = date('j, F Y h:i A');
+
     $emailBody = "
     <html>
     <head>
@@ -49,7 +43,6 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     </html>
     ";
 
-//////// below unnecessary
     $headers = 	'From: Contact Form <contact@mydomain.com>' . "\r\n" .
     "Reply-To: $email" . "\r\n" .
     "MIME-Version: 1.0\r\n" .
@@ -57,8 +50,15 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
 
     $to = 'contact@example.com';
     $subject = 'Contacting you';
-///////////////////////////////////////
 
+    if (mail($to, $subject, $emailBody, $headers)) {
+      $sent = true;
+    }
+  }
+}
+
+//////////////////////////////
+  require_once'libs/PHPMailerAutoload.php';
   $m = new PHPMailer;
   $m->isSMTP();                                      // Set mailer to use SMTP
   $m->SMTPAuth = true;                               // Enable SMTP authentication
@@ -82,12 +82,10 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
   {
   echo "Message has been sent successfully";
   }
-//////////////////////////
-    if (mail($to, $subject, $emailBody, $headers)) {
-      $sent = true;
-    }
-  }
-}
+
+
+///////////////////////////
+
 ?>
 
   <?php if (!empty($errors)) : ?>
