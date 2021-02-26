@@ -4,10 +4,10 @@ import Map from '../assets/map.png';
 import { Navbar,Nav  } from 'react-bootstrap';
 import {Route, BrowserRouter as Router, NavLink } from "react-router-dom";
 
-import Grow from "../pages/grow"
-import Solve_Make from "../pages/solve_make";
-import Mission_Vision from "../pages/mission_vision";
-import Work_With_Us from "../pages/work_with_us";
+import Grow from "../pages/Grow_Different/grow"
+import Solve_Make from "../pages/Solve_and_Make/solve_make";
+import Mission_Vision from "../pages/Mission_and_Vision/mission_vision";
+import Work_With_Us from "../pages/Work_with_Us/work_with_us";
 
 import './footer.css'
 

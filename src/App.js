@@ -1,131 +1,116 @@
 
-import './App.css';
+import './App_2.css';
 import React from 'react';
 import {Route, BrowserRouter as Router, NavLink } from "react-router-dom";
-import Logo from './assets/logo.svg';
 import { Navbar, Nav, NavDropdown  } from 'react-bootstrap';
+import Logo from './assets/logo.svg';
 
 import Footer from './components/footer';
-import Landing from "./pages/landing"
-
-import Grow from "./pages/grow";
-import Plants from "./pages/subpages/grow_plants";
-import Fungi from "./pages/subpages/grow_fungi";
-import Phoma from "./pages/subpages/phoma";
-import Bacteria from "./pages/subpages/grow_bacteria";
-
-
-import Solve_Make from "./pages/solve_make";
-import Solve from "./pages/subpages/solve";
-import Make from "./pages/subpages/make";
-
-import Mission_Vision from "./pages/mission_vision";
-
-import Work_With_Us from "./pages/work_with_us";
-import About from "./pages/subpages/about";
-import News from "./pages/subpages/news_page";
-import Ip_Risk_Sharing from "./pages/subpages/ip_risk_sharing";
-import Fee from "./pages/subpages/fee_for_service";
-
-import Impressum from "./pages/impressum";
-import Journalists from "./pages/journalists";
 import ScrollToTop from './components/scrollToTop';
 
+import Landing from "./pages/landing";
+import LinkedIn from "./pages/linkedin";
+
+import Grow from "./pages/Grow_Different/grow";
+import Plants from "./pages/Grow_Different/grow_plants";
+import Fungi from "./pages/Grow_Different/grow_fungi";
+import Phoma from "./pages/Grow_Different/phoma";
+import Bacteria from "./pages/Grow_Different/grow_bacteria";
+
+import Solve_Make from "./pages/Solve_and_Make/solve_make";
+import Solve from "./pages/Solve_and_Make/solve";
+import Make from "./pages/Solve_and_Make/make";
+
+import Mission_Vision from "./pages/Mission_and_Vision/mission_vision";
+
+import Work_With_Us from "./pages/Work_with_Us/work_with_us";
+import About from "./pages/Work_with_Us/about";
+import News from "./pages/Work_with_Us/news_page";
+import Ip_Risk_Sharing from "./pages/Work_with_Us/ip_risk_sharing";
+import Fee from "./pages/Work_with_Us/fee_for_service";
+
+import Impressum from "./pages/_Misc/impressum";
+import Journalists from "./pages/_Misc/journalists";
+
+
 import { loadReCaptcha } from 'react-recaptcha-google';
-
-
-
 
 
 class App extends React.Component {
 
   componentDidMount() {
-  loadReCaptcha();
+    loadReCaptcha();
+    document.title = "Evologic Technologies";
+    document.link = {Logo};
   }
-
-
-
 
 render() {
   return (
     <div id="app" className="App">
 
-
-      <Router onUpdate={() => window.scrollTo(0, 0)}>
+      <Router>
       <ScrollToTop />
 
-      <Navbar className="sticky-top bg-white" expand="xl">
-        {/*<div className="navbar_content">*/}
-        <Navbar.Brand>
-          <NavLink to="/"><img src={Logo} width="180"/></NavLink>
-        </Navbar.Brand>
+      <Navbar className="sticky-top bg-white border py-3" expand="xl">
 
+        <Navbar.Brand><NavLink className="pl-5" to="/"><img src={Logo} width="180"/></NavLink></Navbar.Brand>
+
+        {/*THIS is the hambuer menu button*/}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav" className="pr-5">
 
-        <Navbar.Collapse id="basic-navbar-nav">
+          <div className="nav-item-div n_mission">
+            <NavLink className="main_item" activeStyle={{borderBottom: 3 + "px solid #542D2F"}} to="/mission">MISSION and VISION</NavLink>
+          </div>
 
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <div class="n_solve dropdown mydropdowncss">
-              	<NavLink to="/solve_and_make" activeStyle={{fontWeight: "bold",color: "#CF4C43"}} className="  main_item" data-toggle="dropdown">SOLVE and MAKE</NavLink>
-                <ul class="dropdown-menu ddm-1">
-                  <li><NavLink className="solve" to="/solve_and_make/solve">Solve</NavLink></li>
-                  <li><NavLink className="solve" to="/solve_and_make/make">Make</NavLink></li>
-                </ul>
-              </div>
-            </li>
+          <div class="nav-item-div n_solve">
+            <NavLink to="/solve_and_make" activeStyle={{borderBottom: 3 + "px solid #CF4C43"}} className="main_item" >SOLVE and MAKE</NavLink>
+              <NavLink className="dd dd-1" activeClassName="dd-1-a" to="/solve">Solve</NavLink>
+              <NavLink className="dd dd-2" activeClassName="dd-2-a" to="/make">Make</NavLink>
+          </div>
 
-            <li class="nav-item">
-              <div class="n_grow dropdown mydropdowncss">
-              	<NavLink to="/grow" activeStyle={{fontWeight: "bold",color: "#238223"}} className="  main_item" data-toggle="dropdown">Grow DIFFERENT</NavLink>
-                  <ul class="dropdown-menu ddm-2">
-                  	<li><NavLink className="grow" to="/grow/plants">Plants</NavLink></li>
-                    <li><NavLink className="grow" to="/grow/fungi">Fungi</NavLink></li>
-                    <li><NavLink className="grow" to="/grow/bacteria">Bacteria</NavLink></li>
-                  </ul>
-              </div>
-            </li>
+          <div class="nav-item-div n_grow">
+            <NavLink to="/grow" activeStyle={{borderBottom: 3 + "px solid #238223"}} className="main_item">Grow DIFFERENT</NavLink>
+              	<NavLink className="dd dd-3" activeClassName="dd-3-a" to="/plants">Plants</NavLink>
+                <NavLink className="dd dd-4" activeClassName="dd-4-a" to="/fungi">Fungi</NavLink>
+                <NavLink className="dd dd-5" activeClassName="dd-5-a" to="/bacteria">Bacteria</NavLink>
+          </div>
 
-              <li class="nav-item"><div className="n_mission dropdown"><NavLink className=" main_item" activeStyle={{fontWeight: "bold",color: "#542D2F"}} to="/mission">MISSION and VISION</NavLink></div></li>
-
-            <li class="nav-item">
-              <div class="n_work dropdown mydropdowncss">
-              	<NavLink to="/work_with_us" activeStyle={{fontWeight: "bold",color: "#433166"}} className=" main_item" data-toggle="dropdown">WORK with US</NavLink>
-                  <ul class="dropdown-menu ddm-3" >
-                  	<li><NavLink className="work" id="our_team" to="/work_with_us/about_us">Our Team</NavLink></li>
-                    <li><NavLink className="work" to="/work_with_us/news">News</NavLink></li>
-                  </ul>
-              </div>
-              </li>
-          </ul>
+          <div class="nav-item-div n_work">
+          	<NavLink to="/work_with_us" activeStyle={{borderBottom: 3 + "px solid #433166"}} className=" main_item">WORK with US</NavLink>
+              	<NavLink className="dd dd-6" activeClassName="dd-6-a" to="/about_us">About Us</NavLink>
+                <NavLink className="dd dd-7" activeClassName="dd-7-a" to="/news">News</NavLink>
+          </div>
 
         </Navbar.Collapse>
-        {/*</div>*/}
+
       </Navbar>
 
+      <Route path="/" exact component={Landing} />
+      <Route path="/solve_and_make" exact component={Solve_Make} />
 
-        <Route path="/" exact component={Landing} />
-        <Route path="/solve_and_make" exact component={Solve_Make} />
-        <Route path="/solve_and_make/make" exact component={Make} />
-        <Route path="/solve_and_make/solve" exact component={Solve} />
+      <Route path="/make" exact component={Make} />
+      <Route path="/solve" exact component={Solve} />
 
-        <Route path="/grow" exact component={Grow} />
-        <Route path="/grow/plants" exact component={Plants} />
-        <Route path="/grow/fungi" exact component={Fungi} />
-        <Route path="/grow/fungi/phoma" exact component={Phoma} />
-        <Route path="/grow/bacteria" exact component={Bacteria} />
+      <Route path="/grow" exact component={Grow} />
+      <Route path="/plants" exact component={Plants} />
+      <Route path="/fungi" exact component={Fungi} />
+      <Route path="/grow/fungi/phoma" exact component={Phoma} />
+      <Route path="/bacteria" exact component={Bacteria} />
 
-        <Route path="/mission" exact component={Mission_Vision} />
+      <Route path="/mission" exact component={Mission_Vision} />
 
-        <Route path="/work_with_us" exact component={Work_With_Us} />
-        <Route path="/work_with_us/about_us" exact component={About} />
-        <Route path="/work_with_us/news" exact component={News} />
+      <Route path="/work_with_us" exact component={Work_With_Us} />
+      <Route path="/about_us" exact component={About} />
+      <Route path="/news" exact component={News} />
 
-        <Route path="/work_with_us/ip_sharing" exact component={Ip_Risk_Sharing} />
-        <Route path="/work_with_us/fee_for_service" exact component={Fee} />
+      <Route path="/work_with_us/ip_sharing" exact component={Ip_Risk_Sharing} />
+      <Route path="/work_with_us/fee_for_service" exact component={Fee} />
 
-        <Route path="/impressum" exact component={Impressum} />
-        <Route path="/journalists" exact component={Journalists} />
+      <Route path="/impressum" exact component={Impressum} />
+      <Route path="/journalists" exact component={Journalists} />
+
+      <Route path="/linkedin" exact component={LinkedIn} />
 
 
         <Footer />

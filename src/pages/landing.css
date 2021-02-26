@@ -6,3 +6,22 @@
   align-items: center;
   justify-content: space-between;
 }
+.mission .col-md{
+  display: flex;
+  color: black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.value_chain a{
+  padding: 0;
+}
+#un{
+  text-decoration: underline;
+}
+#un:hover{
+  color: black;
+}
+.arrow{
+  width: 4% ;
+}

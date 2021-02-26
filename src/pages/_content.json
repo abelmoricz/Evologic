@@ -1,0 +1,23 @@
+{
+  "solve and make" : {
+    "title": "Solve and Make",
+    "content":"Using pharma technology in combination with our proprietary production technology platform, we deliver unmatched product quality at highly competitive costs. Our specialty is innovative, but industrially scalable technological solutions to manufacturing challenges. We don´t simply produce biomass. We strive to understand what makes each product work. Based on that scientific level of understanding our team of engineers and scientists translates science into an industrial manufacturing process. ",
+    "stat1 title" : "98%",
+    "stat2 title" : "22%",
+    "stat3 title" : "2/3",
+    "stat4 title" : "17%",
+    "stat1 content" : "quisque sagittis purus sit",
+    "stat2 content" : "quisque sagittis purus sit",
+    "stat3 content" : "quisque sagittis purus sit",
+    "stat4 content" : "quisque sagittis purus sit"
+  },
+
+  "grow different": {
+    "title": "Grow Different",
+    "content":"The fungal kingdom is Evologic’s  secret passion when it comes to favorite organisms. However, we offer more – our capabilities span growing transformed plants (without leaves) in bioreactors to growing and formulating challenging bacteria with an impressing productivity."
+  },
+  "work with us" : {
+    "title": "Work with Us",
+    "content":"Evologic offers excellence in manufacturing and formulation technologies. So, if you have a microbial organism you want to bring to market – lets get in touch and make this work. However we do prefer a challenge."
+  }
+}

@@ -20,8 +20,7 @@ class Image extends React.Component {
           <div className="">
             <div className="caption-2"> {this.props.text} </div>
             <div className="content">
-              <p >Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra
-               justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis</p>
+              <p > {this.props.content} </p>
             </div>
           </div>
         </div>

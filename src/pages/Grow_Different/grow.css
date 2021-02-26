@@ -1,0 +1,27 @@
+
+@media only screen and (min-width: 992px) {
+
+  .bg_image_1{
+    background-image: url('../../assets/grow_bg copy.jpg');
+    background-repeat: no-repeat;
+    background-size: calc(100%);
+  }
+
+  .intro{ padding-top: 2vw; padding-bottom: 2vw; }
+  .plants_content{ padding-top: 12vw; }
+  .fungi_content{ padding-top: 20vw; }
+  .bacteria_content{ padding-top: 40vw; padding-bottom: 20vw }
+}
+
+@media only screen and (min-width: 1200px){
+  .intro{ padding-top: 4vw; padding-bottom: 4vw; }
+  .plants_content{ padding-top: 15vw; }
+  .fungi_content{ padding-top: 20vw; }
+  .bacteria_content{ padding-top: 50vw; padding-bottom: 20vw }
+}
+@media only screen and (min-width: 1400px){
+  .intro{ padding-top: 5vw; padding-bottom: 5vw; }
+  .plants_content{ padding-top: 15vw; }
+  .fungi_content{ padding-top: 30vw; }
+  .bacteria_content{ padding-top: 50vw; padding-bottom: 20vw }
+}

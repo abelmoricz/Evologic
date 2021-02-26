@@ -3,11 +3,15 @@
   src: url('./assets/Poppins/Poppins-Light.ttf');
   font-weight: lighter;
 }
-
 @font-face{
     font-family: 'Poppins';
   src: url('./assets/Poppins/Poppins-Bold.ttf');
   font-weight: bolder;
+}
+@font-face{
+  font-family: 'Poppins';
+  src: url('./assets/Poppins/Poppins-Black.ttf');
+  font-weight: bold;
 }
 
 .btn-primary{
@@ -22,6 +26,7 @@
 }
 
 a{ color: black; }
+a:hover{ color: black; }
 
 h1, h3, h4, p{
   text-align: center;
@@ -53,9 +58,16 @@ hr{
   margin-top: 20%;
   margin-bottom: 20%;
 }
-.mt-10{
-  margin-top: 20%;
-}
-.mb-10{
-  margin-bottom: 20%;
+.mt-10{ margin-top: 20%; }
+.mb-10{ margin-bottom: 20%; }
+.mb-10{ margin-bottom: 20%; }
+
+.mt-nav { margin-top: 7%; }
+.mb-7 { margin-bottom: 12%}
+
+.text_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

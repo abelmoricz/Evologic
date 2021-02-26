@@ -1,3 +1,5 @@
+
+
 <?php
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: Content-Type");
@@ -12,17 +14,24 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $errors[] = 'Email is empty';
   } else {
     $email = $_POST['email'];
-
     // validating the email
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors[] = 'Invalid email';
     }
   }
+
   if (empty($_POST['message'])) {
     $errors[] = 'Message is empty';
   } else {
     $message = $_POST['message'];
   }
+
+  if (empty($_POST['name'])) {
+    $name = 'No Name';
+  } else {
+    $name = $_POST['name'];
+  }
+
   if (empty($errors)) {
     $date = date('j, F Y h:i A');
 
@@ -37,53 +46,41 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     <br>
     Email: <span style=\"color:#888\">$email</span>
     <br>
-    Message: <div style=\"color:#888\">$message</div>
+    I'm Interested in: <span style=\"color:#888\">$message</span>
     </div>
     </body>
     </html>
     ";
 
-    $headers = 	'From: Contact Form <contact@mydomain.com>' . "\r\n" .
-    "Reply-To: $email" . "\r\n" .
-    "MIME-Version: 1.0\r\n" .
-    "Content-Type: text/html; charset=iso-8859-1\r\n";
-
-    $to = 'contact@example.com';
-    $subject = 'Contacting you';
-
-    if (mail($to, $subject, $emailBody, $headers)) {
-      $sent = true;
-    }
   }
 }
 
 //////////////////////////////
+
   require_once'libs/PHPMailerAutoload.php';
   $m = new PHPMailer;
   $m->isSMTP();                                      // Set mailer to use SMTP
   $m->SMTPAuth = true;                               // Enable SMTP authentication
   $m->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-  $m->Username = '';                 // SMTP username
-  $m->Password = '';                           // SMTP password
+  $m->Username = 'evologic.technology@gmail.com';                 // SMTP username
+  $m->Password = 'Evologic2020@';                           // SMTP password
   $m->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
   $m->Port = 587;
   $m->isHTML(true);                                  // Set email format to HTML
 
   $m->Subject = 'Contact form submited';
-  $m->Body = 'From: ' . $name . ' (' . $email . ')<p>' . $message . '</p>';
+  $m->Body = $emailBody;
   $m->FromName = 'Evologic Contact Form Submitted!';
-  $m->addAddress('', '');     // Add a recipient
+  $m->addAddress('abel.moricz.2@gmail.com', '');     // Add a recipient
 
-  if(!$m->send())
-  {
-  echo "Mailer Error: " . $mail->ErrorInfo;
+if (empty($errors)) {
+  if($m->send()) {
+  $sent=true;
   }
-  else
-  {
-  echo "Message has been sent successfully";
+  else {
+  $sent=false;
   }
-
-
+}
 ///////////////////////////
 
 ?>
