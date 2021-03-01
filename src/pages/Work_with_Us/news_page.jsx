@@ -20,7 +20,7 @@ class News extends React.Component {
    }
    render() {
 
-     const images = require.context('../../assets/news', true);
+     const images = require.context('../../assets/Work_with_Us/news', true);
 
      const news_list=news.map(news_item => {
         let image_path = images(`./${news_item.pic}`);

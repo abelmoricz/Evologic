@@ -7,13 +7,19 @@ import news from './news.json';
 
 import banner from '../../assets/Work_with_Us/banner.jpg';
 import operative from '../../assets/Work_with_Us/operative.jpg';
-import flag from '../../assets/flag.png';
+import flag from '../../assets/Work_with_Us/flag.png';
 
 import science1 from '../../assets/Work_with_Us/marco.png';
 import science2 from '../../assets/Work_with_Us/D_Eibl.png';
 import science3 from '../../assets/Work_with_Us/Norbert.png';
 import science4 from '../../assets/Work_with_Us/S_Mullenr.png';
 import science5 from '../../assets/Work_with_Us/placeholder.png';
+
+import business1 from '../../assets/Work_with_Us/rolf.png';
+import business2 from '../../assets/Work_with_Us/hans.png';
+import business3 from '../../assets/Work_with_Us/peter.png';
+
+import json from './_content.json';
 
 
 class About extends React.Component {
@@ -22,14 +28,12 @@ class About extends React.Component {
         <div className="about_us mt-nav">
           <h1 className="purple">About Us</h1>
           <img src={banner} width="100%"/>
-          <p className="col-sm-10 mx-auto my-5">in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt
-          id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu non</p>
+          <p className="col-sm-10 mx-auto my-5">{json['about us page']['banner caption']}</p>
 
           <hr className="purple" />
 
           <h3 className="purple">Cooperation among Three Teams</h3>
-          <p className="col-sm-10 mx-auto">in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt
-          id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu non</p>
+          <p className="col-sm-10 mx-auto">{json['about us page']['3 teams']}</p>
 
           <div className="col-md-11 my-5 mx-auto row">
             <div className="col-md-4">
@@ -37,8 +41,8 @@ class About extends React.Component {
             </div>
             <div className="col-md-8 text_box">
               <h4 className="purple">Operative Team</h4>
-              <p>Porttitor Leo a diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper
-              sit amet risus nullam eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor nec feugiat</p>
+              <p>{json['about us page']['operative']}</p>
+
               <div className="row mx-auto text-center" align="center">
                 <div className="col-11 mx-auto">
                   <img className="m-1" src={flag} width="6%"/><img className="m-1" src={flag} width="6%"/><img className="m-1" src={flag} width="6%"/>
@@ -52,7 +56,7 @@ class About extends React.Component {
 
           <div className="col-sm-10 mx-auto">
             <h4 className="purple">Science Advisory</h4>
-            <p className="col-md-8 mx-auto">in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu non</p>
+            <p className="col-md-8 mx-auto">{json['about us page']['science']}</p>
             <div className="m-5">
               <Person img={science1} name="Dr. Marco Giovanetti:" text=" his research on the molecular mechanisms of AMF symbiosis makes him one of the view existing experts on plant AMF interaction and AMF biochemistry"/>
               <Person img={science2} name="Prof. Dieter Eilbl:" text=" one of a few veritable experts in hairy root cultivation techniques, who has been actively involved in the development of related production technologies for industrial applications"/>
@@ -66,11 +70,11 @@ class About extends React.Component {
 
           <div className="col-sm-10 mx-auto">
             <h4 className="purple">Business Advisory</h4>
-            <p className="col-md-8 mx-auto">in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu non</p>
+            <p className="col-md-8 mx-auto">{json['about us page']['business']}</p>
             <div className="m-5">
-              <Person img={science1} name="Dr. Marco Giovanetti:" text=" his research on the molecular mechanisms of AMF symbiosis makes him one of the view existing experts on plant AMF interaction and AMF biochemistry"/>
-              <Person img={science2} name="Prof. Dieter Eilbl:" text=" one of a few veritable experts in hairy root cultivation techniques, who has been actively involved in the development of related production technologies for industrial applications"/>
-              <Person img={science3} name="Dr. Stuart Stocks:" text=" Bridging the gap between academia and industry Dr. Stocks has gathered extensive know-how in upscaling processes in the field of white biotech from 1L to >100 m3 as wells as in red biotech"/>
+              <Person img={business1} name="Dr. Rolf Witte:" text=" As an experienced entrepreneur and CEO/CFO of various companies (Neuraxo Pharmaceuticals, Contract Medical International, PSites Pharma, Bert Energy GmbH) his key expertise lies in finance and biotech evaluations. Dr. Witte has background as a lawyer and auditor and has a strong track record of arranging financing rounds"/>
+              <Person img={business2} name="Dr. Hans Bodingbauer:" text=" with his strong international industrial (Agro Linz, DuPont, BayWa) background in product development (agrochemicals) and controlling, Dr. Bodingbauer was a successful entrepreneur (Netragon AG) and is leading the business development sounding board of Evologic Technologies"/>
+              <Person img={business3} name="Dr. Peter Innes :" text=" During his time as Chief Executive Officer, Becker Underwood was acquired by BASF in 2012. Prior to this exit, he successfully expanded the company expanded from a single facility business in Iowa to a global company with operations on five continents. Prior to joining Becker Underwood, Peter was Group Managing Director of The MicroBio Group Limited, a manufacturer of bio-fertilizers and crop protection products that was acquired by Becker Underwood in 2000"/>
             </div>
           </div>
 
@@ -89,7 +93,7 @@ class About extends React.Component {
 
 class Top_News extends React.Component {
    render() {
-     const images = require.context('../../assets/news', true);
+     const images = require.context('../../assets/Work_with_Us/news', true);
 
      let top_3_counter = 0;
      const news_list=news.map(news_item => {

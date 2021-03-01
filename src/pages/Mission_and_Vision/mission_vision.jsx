@@ -1,24 +1,24 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import strain from '../../assets/value_chain/strain.svg';
-import production from '../../assets/value_chain/production_brown.svg';
-import production_clean from '../../assets/value_chain/production_blank.svg';
-import formulation from '../../assets/value_chain/formulation_brown.svg';
-import formulation_clean from '../../assets/value_chain/formulation_blank.svg';
-import application from '../../assets/value_chain/application.svg';
-import distribution from '../../assets/value_chain/distribution.svg';
-import field from '../../assets/value_chain/field.svg';
-import arrow from '../../assets/value_chain/arrow.svg';
+import strain from '../../assets/_Misc/value_chain/strain.svg';
+import production from '../../assets/_Misc/value_chain/production_brown.svg';
+import production_clean from '../../assets/_Misc/value_chain/production_blank.svg';
+import formulation from '../../assets/_Misc/value_chain/formulation_brown.svg';
+import formulation_clean from '../../assets/_Misc/value_chain/formulation_blank.svg';
+import application from '../../assets/_Misc/value_chain/application.svg';
+import distribution from '../../assets/_Misc/value_chain/distribution.svg';
+import field from '../../assets/_Misc/value_chain/field.svg';
+import arrow from '../../assets/_Misc/value_chain/arrow.svg';
 
-import goal2 from '../../assets/un/img-goal-2.jpg';
-import w_goal2 from '../../assets/un/white-2-shadow.png';
-import goal6 from '../../assets/un/img-goal-6.jpg';
-import w_goal6 from '../../assets/un/white-6-shadow.png';
-import goal12 from '../../assets/un/img-goal-12.jpg';
-import w_goal12 from '../../assets/un/white-12-shadow.png';
-import goal15 from '../../assets/un/img-goal-15.jpg';
-import w_goal15 from '../../assets/un/white-15-shadow.png';
+import goal2 from '../../assets/_Misc/UN/goal-2-bg.jpg';
+import w_goal2 from '../../assets/_Misc/UN/white-2-shadow.png';
+import goal6 from '../../assets/_Misc/UN/goal-6-bg.jpg';
+import w_goal6 from '../../assets/_Misc/UN/white-6-shadow.png';
+import goal12 from '../../assets/_Misc/UN/goal-12-bg.jpg';
+import w_goal12 from '../../assets/_Misc/UN/white-12-shadow.png';
+import goal15 from '../../assets/_Misc/UN/goal-15-bg.jpg';
+import w_goal15 from '../../assets/_Misc/UN/white-15-shadow.png';
 
 import Value_Chain_Item from '../../components/value_chain_item';
 import Image from '../../components/image';

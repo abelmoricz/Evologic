@@ -6,7 +6,7 @@ class Wall extends React.Component {
    render() {
       return (
         <div className="about_us mt-nav">
-          <h1 className="purple">The Wall</h1>
+          <p>Please fill out the Contact form to explor our technology in more detail</p>
           <Contact />
 
 

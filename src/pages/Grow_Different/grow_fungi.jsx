@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from '../../components/image';
 import { NavLink } from 'react-router-dom';
-import phoma from '../../assets/grow/fungi1.jpg';
-import mycoproscale from '../../assets/grow/fungi2.jpg';
+import phoma from '../../assets/Grow_Different/grow/fungi1.jpg';
+import mycoproscale from '../../assets/Grow_Different/grow/fungi2.jpg';
 
 class Fungi extends React.Component {
    render() {

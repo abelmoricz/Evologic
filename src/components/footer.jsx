@@ -1,6 +1,6 @@
 import React from 'react'
-import Logo from '../assets/logo.svg';
-import Map from '../assets/map.png';
+import Logo from '../assets/_Misc/logo.svg';
+import Map from '../assets/_Misc/map.png';
 import { Navbar,Nav  } from 'react-bootstrap';
 import {Route, BrowserRouter as Router, NavLink } from "react-router-dom";
 

@@ -1,11 +1,5 @@
 import React from 'react';
 
-import strain from '../assets/value_chain/strain.svg';
-
-
-
-
-
 
 class Value_Chain_Item extends React.Component {
 

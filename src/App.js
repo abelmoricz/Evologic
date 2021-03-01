@@ -3,7 +3,7 @@ import './App_2.css';
 import React from 'react';
 import {Route, BrowserRouter as Router, NavLink } from "react-router-dom";
 import { Navbar, Nav, NavDropdown  } from 'react-bootstrap';
-import Logo from './assets/logo.svg';
+import Logo from './assets/_Misc/logo.svg';
 
 import Footer from './components/footer';
 import ScrollToTop from './components/scrollToTop';
@@ -43,7 +43,6 @@ class App extends React.Component {
   componentDidMount() {
     loadReCaptcha();
     document.title = "Evologic Technologies";
-    document.link = {Logo};
   }
 
 render() {
