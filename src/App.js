@@ -28,9 +28,11 @@ import About from "./pages/Work_with_Us/about";
 import News from "./pages/Work_with_Us/news_page";
 import Ip_Risk_Sharing from "./pages/Work_with_Us/ip_risk_sharing";
 import Fee from "./pages/Work_with_Us/fee_for_service";
+import Wall from "./pages/Work_with_Us/email_wall";
 
 import Impressum from "./pages/_Misc/impressum";
 import Journalists from "./pages/_Misc/journalists";
+import ProtectedRoute from "./components/Protected_Route";
 
 
 import { loadReCaptcha } from 'react-recaptcha-google';
@@ -93,10 +95,13 @@ render() {
       <Route path="/solve" exact component={Solve} />
 
       <Route path="/grow" exact component={Grow} />
-      <Route path="/plants" exact component={Plants} />
-      <Route path="/fungi" exact component={Fungi} />
+
+        <ProtectedRoute path="/plants"><Plants /></ProtectedRoute>
+        <ProtectedRoute path="/fungi"><Fungi /></ProtectedRoute>
+        <ProtectedRoute path="/bacteria"><Bacteria /></ProtectedRoute>
+
+
       <Route path="/grow/fungi/phoma" exact component={Phoma} />
-      <Route path="/bacteria" exact component={Bacteria} />
 
       <Route path="/mission" exact component={Mission_Vision} />
 
@@ -110,7 +115,9 @@ render() {
       <Route path="/impressum" exact component={Impressum} />
       <Route path="/journalists" exact component={Journalists} />
 
-      <Route path="/linkedin" exact component={LinkedIn} />
+      {/*<Route path="/linkedin" exact component={LinkedIn} />*/}
+
+      <Route path="/wall" exact component={Wall} />
 
 
         <Footer />
