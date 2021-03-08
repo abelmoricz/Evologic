@@ -8,7 +8,7 @@ class News_Item extends React.Component {
         <div style={{border: 5 + 'px solid #433166' }} className="row text-center">
 
           {/*Image*/}
-          <div className="col-sm-6 p-0 text_box d-none d-sm-flex"> {/*this disapears on mobile with d-none d-sm-flex*/}
+          <div className="col-sm-6 pt-3 pl-3 text_box d-none d-sm-flex"> {/*this disapears on mobile with d-none d-sm-flex*/}
             <img src={this.props.img} width="100%"/>
           </div>
 
@@ -23,7 +23,7 @@ class News_Item extends React.Component {
           </div>
 
           {/*Description*/}
-          <p className="m-0" style={{fontSize: 12 + 'pt' }}>{this.props.text}</p>
+          <p className="m-0 mb-3" style={{fontSize: 12 + 'pt' }}>{this.props.text}</p>
 
         </div>
       )

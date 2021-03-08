@@ -1,3 +1,4 @@
+.pointer:hover{cursor: pointer;}
 @font-face{
   font-family: 'Poppins';
   src: url('./assets/Poppins/Poppins-Light.ttf');
@@ -16,20 +17,23 @@
 
 .btn-primary{
   color: white !important;
-  background-color: #433166;
   border-radius: 25px;
   text-align: center;
 }
 .btn-primary:hover{
-  background-color: #433166;
   opacity: 0.5;
 }
 
 a{ color: black; }
 a:hover{ color: black; }
 
+
 h1, h3, h4, p{
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  h1{font-size: 48pt !important; line-height: 48pt !important;}
 }
 
 h1{ font-size: 48pt; }
@@ -37,11 +41,11 @@ h1{ font-size: 48pt; }
 
 p{ font-size: 18pt; font-weight: lighter; }
 h3{ font-size: 36pt; font-weight: lighter; }
-h4{ font-size: 26pt; font-weight: lighter; }
+h4{ font-size: 22pt; font-weight: lighter; }
 h5{ font-size: 18pt; font-weight: lighter; }
 
 hr{
-  opacity: 100%;
+  opacity: 1;
   border-top: 2px solid;
   width: 50%;
   margin: auto;
@@ -53,12 +57,13 @@ hr{
 .green{ color: #238223; }
 .brown{ color: #542D2F; }
 .purple{ color: #433166; }
+.grey{ color: #657073; }
 
 .my-10{
-  margin-top: 20%;
-  margin-bottom: 20%;
+  margin-top: 15%;
+  margin-bottom: 15%;
 }
-.mt-10{ margin-top: 20%; }
+.mt-10{ margin-top: 15%; }
 .mb-10{ margin-bottom: 20%; }
 .mb-10{ margin-bottom: 20%; }
 

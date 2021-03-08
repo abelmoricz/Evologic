@@ -84,56 +84,58 @@ class Mission_Vision extends React.Component {
         <div className="mission mt-nav">
 
           <h1 className="brown">MISSION</h1>
-          <h3 className="mb-5">“Make Science based Biologicals economically feasible”</h3>
+          <h3 className="">“Make science based biologicals economically feasible”</h3>
+          <p className="mb-5 mx-auto col-sm-10">Biologicals comprise a tremendous potential when it comes to sustainability. However, the efficiency in translating well researched biologicals into economic feasible products has been very poor in the last decades. Evologic´s mission is to overcome the challenges associated to biologicals and to translate the underlying science in econonomically feasible products to change the world for the better. </p>
 
           <div className="row mt-5 mb-7">
-            <div className="col-md-3"><Image img={goal2} addtext="1" content={json["un goals"]["2"]} text={<img src={w_goal2} />}/></div>
-            <div className="col-md-3"><Image img={goal6} addtext="1" content={json["un goals"]["6"]} text={<img src={w_goal6} />}/></div>
-            <div className="col-md-3"><Image img={goal12} addtext="1" content={json["un goals"]["12"]} text={<img src={w_goal12} />}/></div>
-            <div className="col-md-3"><Image img={goal15} addtext="1" content={json["un goals"]["15"]} text={<img src={w_goal15} />}/></div>
+            <div className="col-md-3"><Image img={goal2} addtext="1" content_title="Zero hunger" content={json["un goals"]["2"]} text={<img src={w_goal2} />}/></div>
+            <div className="col-md-3"><Image img={goal6} addtext="1" content_title="Clean water and sanitation" content={json["un goals"]["6"]} text={<img src={w_goal6} />}/></div>
+            <div className="col-md-3"><Image img={goal12} addtext="1" content_title="Responsible consumption and production" content={json["un goals"]["12"]} text={<img src={w_goal12} />}/></div>
+            <div className="col-md-3"><Image img={goal15} addtext="1" content_title="Life on land" content={json["un goals"]["15"]} text={<img src={w_goal15} />}/></div>
           </div>
 
 
           <h1 className="brown">VISION</h1>
-          <h3 className=" mb-7">“Supply best in class biologicals to the industry”</h3>
+          <h3 className="">“Supply best in class biologicals to the industry”</h3>
+          <p className="mb-7 mx-auto col-sm-10">Market adoption of biologicals is fueled by reproducibility and applicability. Both characteristics are closely linked to product quality. Now we, at Evologic, believe that 1) product quality is defined during production and 2) conserved during formulation. Combining the best technologies in one, flexible, collaborative value chain is the foundation of our vision to supply best in class biologicals to the industry. </p>
 
-          <h1 id="value_chain" className="py-5 brown ">Value Chain Fit</h1>
+          <h1 id="value_chain" href="#value_chain" className="py-5 brown ">Value Chain</h1>
 
           <div className="d-sm-block d-none ">
           <div className="row value_chain col-lg-11 mx-auto" align="middle">
-            <div className="vc_item col-md px-0" onClick={this.change_to_strain}>
+            <div className="vc_item col-md px-0" onMouseEnter={this.change_to_strain}>
               <img src={strain} width={icon_width} />
-              <h5>Strain</h5>
+              <h5><b>Strain</b></h5>
             </div>
             <img src={arrow} className="arrow"/>
-            <div className="vc_item col-md px-0" onClick={this.change_to_production}>
+            <div className="vc_item col-md px-0" onMouseEnter={this.change_to_production}>
               <img src={production} width={icon_width + 20}/>
-              <h5>Production</h5>
+              <h5><b>Production</b></h5>
             </div>
             <img src={arrow} className="arrow"/>
-            <div className="vc_item col-md px-0" onClick={this.change_to_formulation}>
+            <div className="vc_item col-md px-0" onMouseEnter={this.change_to_formulation}>
               <img src={formulation} width={icon_width + 20}/>
-              <h5>Formulation</h5>
+              <h5><b>Formulation</b></h5>
             </div>
             <img src={arrow} className="arrow"/>
-            <div className="vc_item col-md px-0" onClick={this.change_to_application}>
+            <div className="vc_item col-md px-0" onMouseEnter={this.change_to_application}>
               <img src={application} width={icon_width}/>
-              <h5>Application</h5>
+              <h5><b>Application</b></h5>
             </div>
             <img src={arrow} className="arrow"/>
-            <div className="vc_item col-md px-0" onClick={this.change_to_distribution}>
+            <div className="vc_item col-md px-0" onMouseEnter={this.change_to_distribution}>
               <img src={distribution} width={icon_width}/>
-              <h5>Distribution</h5>
+              <h5><b>Distribution</b></h5>
             </div>
             <img src={arrow} className="arrow"/>
-            <div className="vc_item col-md px-0" onClick={this.change_to_field}>
+            <div className="vc_item col-md px-0" onMouseEnter={this.change_to_field}>
               <img src={field} width={icon_width}/>
-              <h5>Field</h5>
+              <h5><b>Field</b></h5>
             </div>
           </div>
           </div>
 
-          <div className="row mt-5 mb-10" align="center">
+          <div className=" d-sm-flex d-none row mt-5 mb-7" align="center">
             <div className="d-none d-lg-block col-4">
               <img className="offset-lg-3"src={ this.state.image } width="300"/>
             </div>
@@ -145,12 +147,12 @@ class Mission_Vision extends React.Component {
 
           {/*VALE chain ITEMS for mobile version*/}
           <div className="row d-sm-none d-block">
-            <Value_Chain_Item img={strain} title="Strain" text="Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit amet mattis vulputate enim"/>
-            <Value_Chain_Item img={production} title="Production" text="Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit amet mattis vulputate enim"/>
-            <Value_Chain_Item img={formulation} title="Formulation" text="Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit amet mattis vulputate enim"/>
-            <Value_Chain_Item img={application} title="Application" text="Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit amet mattis vulputate enim"/>
-            <Value_Chain_Item img={distribution} title="Distribution" text="Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit amet mattis vulputate enim"/>
-            <Value_Chain_Item img={field} title="Field" text="Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit amet mattis vulputate enim"/>
+            <Value_Chain_Item img={strain} title="Strain" text={json["vc"]["strain"]}/>
+            <Value_Chain_Item img={production} title="Production" text={json["vc"]["production"]}/>
+            <Value_Chain_Item img={formulation} title="Formulation" text={json["vc"]["formulation"]}/>
+            <Value_Chain_Item img={application} title="Application" text={json["vc"]["application"]}/>
+            <Value_Chain_Item img={distribution} title="Distribution" text={json["vc"]["distribution"]}/>
+            <Value_Chain_Item img={field} title="Field" text={json["vc"]["field"]}/>
           </div>
 
         </div>

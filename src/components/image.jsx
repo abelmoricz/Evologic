@@ -20,6 +20,7 @@ class Image extends React.Component {
           <div className="">
             <div className="caption-2"> {this.props.text} </div>
             <div className="content">
+              <h4> {this.props.content_title}</h4>
               <p > {this.props.content} </p>
             </div>
           </div>

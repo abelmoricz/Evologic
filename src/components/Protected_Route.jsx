@@ -1,6 +1,7 @@
 import React from "react";
-import { Redirect, BrowserRouter, Route, withRouter, useHistory } from 'react-router-dom';
+import { Redirect, BrowserRouter, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
+import ScrollToTop from './scrollToTop';
 
 
 const ProtectedRoute = ({ children, ...rest }) => {
@@ -8,11 +9,10 @@ const ProtectedRoute = ({ children, ...rest }) => {
 
   return (
 
-
-
+<div>
+    <ScrollToTop />
     <Route {...rest} render={({ location }) =>
-
-        localStorage.getItem("token") ? (
+      localStorage.getItem("token") ? (
           children
         ) : (
           createBrowserHistory().push(rest["path"]),
@@ -26,6 +26,8 @@ const ProtectedRoute = ({ children, ...rest }) => {
 
       }
     />
+
+    </div>
   );
 
 

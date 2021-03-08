@@ -1,11 +1,11 @@
 {
   "work with us page" : {
     "title_1": "Collaboration",
-    "title_2": "Who we are",
-    "collaboration": "Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam non nisi est sit amet facilisis magna etiam tempor orci eu lobortis elementum nibh tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam",
+    "title_2": "IP/Risk Sharing",
+    "collaboration": "Depending upon your company’s needs, Evologic offers various collaboration opportunities. Whether you’re looking to collaborate on manufacturing, formulation, or even getting in touch with potential distribution partners, we have a solution to meet your needs. We are always interested in combining leading expertise in a given field, bringing together expertise in one competitive value chain.",
 
-    "ip sharing" : "lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas integer eget aliquet nibh praesent tristique magna",
-    "fee" : "eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar",
+    "fee" : "Is your development already well-advanced but you are missing the puzzle piece to complete your project? Evologic offers a fee for service model for all contract manufacturing (MAKE) and contract development (SOLVE) activities. As a customer you retain full control and rights over the generated IP.",
+    "ip sharing" : "Our cooperative projects offer economical access to our services and technologies. Opportunities and risks are shared between all collaborating partners. Depending upon the level of strategic fit, we are open to joint product development programs, grant applications, or simple proof of concept studies. Let's combine our expertise to set new standards for science-based biologicals. ",
 
     "person_1 content" : "quisque sagittis purus sit",
     "person_2 content" : "quisque sagittis purus sit",
@@ -20,7 +20,8 @@
     "operative" : "in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu non",
     "science" : "in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu non",
     "business" : "in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu non",
-    "person_4 content" : "quisque sagittis purus sit"
+    "person_4 content" : "quisque sagittis purus sit",
+    "academic roots" : "dignissim convallis aenean et tortor at risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget dolor morbi non arcu risus quis varius quam quisque id diam vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo"
   },
   "ip sharing page" : {
     "title": "Work with Us",

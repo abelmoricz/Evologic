@@ -1,13 +1,13 @@
 {
 
   "grow": {
-    "how": "Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci porta non pulvinar neque laoreet suspendisse",
-    "challenges":"Augue interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus manufacturing process",
-    "strain":"Augue interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus manufacturing process",
+    "how": "Our customers and collaboration partners appreciate the expertise Evologic brings to the table for process development, optimization, scale up, and formulation. Evologic turns science based biologicals into economically feasible, industrial products. After all, product quality is defined during production, but this quality needs to be conserved by formulation and throughout application to make sure the product keeps its promise.",
+    "challenges":"Do you have a specific challenge in mind? Perhaps product stability, product quality, cost, or scalability? Let’s get in touch! Evologic implements a thorough risk analysis to list and prioritize the factors contributing to your constraints. These factors are then systematically investigated in our lab scale facilities to develop the most efficient solution to any specific challenge. ",
+    "strain":"Are you in need of your product in larger quantity? Evologic offers cutting edge fermentation expertise from lab to industrial scale in combination with proprietary fermentation technologies (e.g. pseudo solid state fermentation – PSSF). We can supply the material in large scale for your field trial, market introduction, or to satisfy your long-term product needs. ",
 
-    "plants":"Posuere ac ut consequat semper viverra nam libero justo laoreet sit amet cursus sit",
-    "fungi":"Posuere ac ut consequat semper viverra nam libero justo laoreet sit amet cursus sit",
-    "bacteria":"Posuere ac ut consequat semper viverra nam libero justo laoreet sit amet cursus sit"
+    "plants":"Plants, when transformed with agrobacterium, can be grown as “hairy roots” to produce small bioactive molecules (secondary metabolites). ",
+    "fungi":"To date, conventional manufacturing technologies only allow quality replication of 4 out of 2.8 million known fungal species while avoiding contamination. Our proprietary manufacturing technology PSSF aims to disrupt this perspective. ",
+    "bacteria":"Bacteria can have many beneficial effects in the agri/feed and food market. However, our technologies will make sure that you are surprised by what can be accomplished in a bioreactor. "
   },
 
   "plants" : {

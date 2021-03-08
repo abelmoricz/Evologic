@@ -3,9 +3,6 @@
 @media only screen and (min-width: 992px) {
   .plants_bg{
 
-      background-image: url('../../assets/Grow_Different/plants_bg.png');
-      background-repeat: no-repeat;
-      background-size: 100%;
   }
 }
 @media only screen and (min-width: 1200px) {

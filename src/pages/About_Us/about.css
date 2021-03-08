@@ -1,0 +1,11 @@
+
+
+#down::after{
+  background-color: green;
+}
+
+.operative_img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

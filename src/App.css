@@ -11,6 +11,7 @@ a{
   margin-left: 40px;
   margin-right: 40px;
 }
+
 @media only screen and (max-width: 1400px) {
   .dropdown .main_item{
     color: black;
@@ -45,12 +46,14 @@ a:hover{
 .n_work:hover .dropdown-menu{ border: none; border-bottom: 3px solid #433166; }
 
 
-.mydropdowncss:hover .dropdown-menu {
+/*.mydropdowncss:hover .dropdown-menu {
   display:flex;
   margin-top: 0;
   border-radius: 0;
 
  }
+
+ */
  .ddm-1 a{
    margin: 35px;
  }

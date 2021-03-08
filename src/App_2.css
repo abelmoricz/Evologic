@@ -13,44 +13,42 @@ a:hover{ text-decoration: none; }
   padding-left: 50px;
   padding-right: 0px;
 }
-.navbar {
-  padding-left: 70px;
-  padding-right: 70px;
+@media only screen and (min-width: 600px) {
+    .custom_navbar {
+      text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }
 
 .dd-1, .dd-2, .dd-3, .dd-4, .dd-5, .dd-6, .dd-7{ display: none; }
 
+
 @media only screen and (min-width: 1200px) {
   .dd-1{ margin-right: 65px;}
-  .n_solve:hover .dd{ display: block; position: absolute; top: 65px; }
-  .n_solve:hover .dd-2{right: 465px;}
+  .n_solve:hover .dd{ display: block; position: absolute; top: 70px; }
+  .n_solve:hover .dd-2{right: 610px;}
   .dd-1:hover { color: #CF4C43; }
   .dd-2:hover { color: #CF4C43; }
-  .dd-1-a{ display: block; position: absolute; top: 65px; border-bottom: 3px solid #CF4C43; }
-  .dd-2-a{ display: block; position: absolute; top: 65px; right: 465px; border-bottom: 3px solid #CF4C43; }
+  .dd-1-a{ display: block; position: absolute; top: 70px; border-bottom: 3px solid #CF4C43; }
+  .dd-2-a{ display: block; position: absolute; top: 70px; right: 610px; border-bottom: 3px solid #CF4C43; }
 
-  .n_grow:hover .dd{ display: block; position: absolute; top: 65px; }
-  .n_grow:hover .dd-3{right: 380px;}
-  .n_grow:hover .dd-4{right: 320px;}
-  .n_grow:hover .dd-5{right: 235px;}
+  .n_grow:hover .dd{ display: block; position: absolute; top: 70px; }
+  .n_grow:hover .dd-3{right: 520px;}
+  .n_grow:hover .dd-4{right: 460px;}
+  .n_grow:hover .dd-5{right: 375px;}
   .dd-3:hover { color: #238223; }
   .dd-4:hover { color: #238223; }
   .dd-5:hover { color: #238223; }
-  .dd-3-a{ display: block; position: absolute; top: 65px; right: 380px; border-bottom: 3px solid #238223; }
-  .dd-4-a{ display: block; position: absolute; top: 65px; right: 320px; border-bottom: 3px solid #238223; }
-  .dd-5-a{ display: block; position: absolute; top: 65px; right: 235px; border-bottom: 3px solid #238223; }
+  .dd-3-a{ display: block; position: absolute; top: 70px; right: 520px; border-bottom: 3px solid #238223; }
+  .dd-4-a{ display: block; position: absolute; top: 70px; right: 460px; border-bottom: 3px solid #238223; }
+  .dd-5-a{ display: block; position: absolute; top: 70px; right: 375px; border-bottom: 3px solid #238223; }
 
-  .n_work:hover .dd{ display: block; position: absolute; top: 65px; }
-  .n_work:hover .dd-6{right: 130px;}
-  .n_work:hover .dd-7{right: 50px;}
-  .dd-6:hover { color: #433166; }
-  .dd-7:hover { color: #433166; }
-  .dd-6-a{ display: block; position: absolute; top: 65px; right: 130px; border-bottom: 3px solid #433166; }
-  .dd-7-a{ display: block; position: absolute; top: 65px; right: 50px; border-bottom: 3px solid #433166; }
 }
 
 
 .n_solve:hover .main_item{ color: #CF4C43; }
 .n_grow:hover .main_item{ color: #238223; }
 .n_mission:hover .main_item{ color: #542D2F; }
-.n_work:hover .main_item{ color: #433166; }
+.n_work:hover .main_item{ color: #657073; }
+.n_about:hover .main_item{ color: #433166; }

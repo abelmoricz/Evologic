@@ -15,7 +15,7 @@ class Impressum extends React.Component {
             FN 451902 m / FB-Gericht: Wien<br />
             Geschäftsführer: Dr. Wieland Reichelt<br />
               <br />
-            Thaliastraße 7, 1160 Wien Tel.: +43 650 8403015<br />
+            Thaliastraße 7, 1160 Wien <br />
             Email: office@evologic-technologies.com<br />
               <br />
             Mitglied der WKÖ / Gewerbeordnung: www.ris.bka.gv.at / Bezirkshauptmannschaft Wien Verbraucher haben die Möglichkeit, Beschwerden an die Online-Streitbeilegungsplattform der EU zu richten: https://ec.europa.eu/odr. Sie können allfällige Beschwerden auch an die oben angegebenen Email-Adressen richten.

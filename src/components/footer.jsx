@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../assets/_Misc/logo.svg';
 import Map from '../assets/_Misc/map.png';
+import Email from '../assets/_Misc/email.png';
 import { Navbar,Nav  } from 'react-bootstrap';
 import {Route, BrowserRouter as Router, NavLink } from "react-router-dom";
 
@@ -20,15 +21,20 @@ class Footer extends React.Component {
 
           <div className=" footer row align-items-center">
 
-            <div className="col-sm-4 p-5 mx-auto"><img src={Logo} width="100%"/></div>
+            <div className="col-sm-4 p-5 mx-auto">
+              <NavLink to="/">
+                <img src={Logo} width="100%"/>
+              </NavLink>
+              <h5 style={{marginLeft: 22 + "%", fontSize: 1.5 + "vw"}}><b>Grow Different</b></h5>
+            </div>
             <div className="col-sm-4 p-5 mx-auto text-center">Evologic Technologies Office<br/>
-              Lemböckgasse 49/B<br/>
-              1230 Wien, AT<br/>
+              Lemböckgasse 49/B1.1<br/>
+              1230 Vienna, AT<br/>
               <br/>
-              Montag - Freitag:<br/>
-              0800 - 1600<br/>
+              Monday - Friday:<br/>
+              08:00 - 16:00<br/>
               <br/>
-              <a href="mailto:office@evologic-technologies.com">office@evologic-technologies.com</a><br/>
+              <a href="mailto:office@evologic-technologies.com"><img src={Email} /></a><br/>
             </div>
             <div className="col-sm-4 p-5 d-sm-block d-none"><img src={Map} width="100%"/></div>
           </div>
@@ -40,7 +46,7 @@ class Footer extends React.Component {
               <NavLink to="/mission">MISSION and VISION</NavLink>
               <NavLink to="/work_with_us">WORK with US</NavLink>
               <NavLink to="/impressum">Impressum</NavLink>
-              <NavLink to="/journalists">For Press</NavLink>
+              {/*<NavLink to="/journalists">For Press</NavLink>*/}
 
             </Nav>
 

@@ -3,22 +3,22 @@
   "mission": "“Make Science based Biologicals economically feasible”",
 
   "un goals" : {
-    "2" : "Biologicals allow to grow more with less. The use of biologicals as complementary agricultural products improves food security, by helping to sustainably produce more food on less acreage, closing the gap between population growth and global food demand",
-    "6" : "Biologicals offer safer, alternative solutions to agrochemicals such as herbicides and pesticides. Using them in place or in combination with synthetic products reduces the chemical residues currently found in freshwater sources, thus improving safely managed drinking water",
-    "12" : "Reducing the manufacturing and application of fertilizers and pesticides, which are major contributors to greenhouse gas emissions, through the use of biologicals fosters responsible resource consumption and agricultural production",
-    "15" : "Alternative agricultural production methods, including the use of biological products, aim to support plant and animal biodiversity within terrestrial ecosystems, and reduce soil degradation currently seen with traditional fertilizer use"
+    "2" : "Biologicals allow farmers to grow more with less. The use of biologicals as complementary agricultural products improves food security, by helping to sustainably produce more food on less acreage, closing the gap between population growth and global food demand.",
+    "6" : "Biologicals offer safer, alternative solutions to agrochemicals such as herbicides and pesticides. Using them in place of or in combination with synthetic products reduces the chemical residues currently found in freshwater sources, thus improving safely managed drinking water.",
+    "12" : "Reducing the manufacturing and application of fertilizers and pesticides, which are major contributors to greenhouse gas emissions, through the usage of biologicals fosters responsible resource consumption and agricultural production.",
+    "15" : "Alternative agricultural production methods, including the use of biological products, aim to support plant and animal biodiversity within terrestrial ecosystems, and reduce soil degradation currently seen with traditional fertilizer use."
   },
 
   "vision": "“Supply best in class biologicals to the industry”",
 
 
   "vc": {
-    "strain" : "Evologic builds upon tested strains. We don´t go into strain screening but focus on production and formulation",
-    "production" : "We really like bioreactors. And our team of scientists and engineers with pharma background shares that passion. From lab to manufacturing scale we think science in an industrial context. If we can´t think it big we rather try a different approach",
-    "formulation" : "Product quality needs to be conserved through formulation. Having production and formulation in house we can integrate both unit operations into our process development. We really go to lengths to stabilize the sensitive nature of the microorganisms whatever it takes – co-formulation freeze drying, fluid bed drying or even encapsulation. However we strive for the most minimalistic formulation to reach maximum shelf life",
-    "application" : "The application technology is crucial for market adoption. However, application technology is not our area of expertise. We collaborate with partners to implement a most versatile application technology",
-    "distribution" : "Evologic does not address the end user directly but collaborates with distribution partners. The scalability of our manufacturing processes in combination with the robust product quality makes Evologic the perfect partner even for large scale projects",
-    "field" : "End of the day our products shall benefit the farmers around the world. Only useful and efficient products will have a significant impact. But biologicals as such have a substantial potential to minimize the environmental footprint of farming"
+    "strain" : "Evologic starts to work once a strain has been selected and validated in application. Strains are sourced externally or accessed in collaboration. Evologic, however can supply quantities for trials.",
+    "production" : "Product quality is Made in production. We strive to find the production parameters that make the biological product work. From lab to manufacturing scale, we think about science in an industrial context. If we can´t think it big we’d rather try a different approach. ",
+    "formulation" : "Product quality is conserved through formulation. With production and formulation in-house we can integrate both unit operations cohesively into our process development. We go to great lengths and do whatever it takes, while striving for the most minimalistic formulation, stabilizing the sensitive nature of the microorganisms. Using co-formulation freeze drying, fluid bed drying or even encapsulation, maximum shelf life is obtained. ",
+    "application" : "The application method of a biological is crucial for market adoption. However, application technology is not our area of expertise. Through collaboration with leading organizations in the field, we can implement the most versatile application technology for each product.  ",
+    "distribution" : "Evologic does not address the end user directly but collaborates with distribution partners. The scalability of our manufacturing processes in combination with robust product quality makes Evologic the perfect partner even for large scale projects. ",
+    "field" : "Biologicals have a substantial potential to minimize the environmental footprint of farming. But the only products that will significantly impact agriculture are those that are useful and efficient. Therefore end-customer feedback is carefully incorporated. At the end of the day, our products shall benefit farmers around the world. Only useful and efficient products will have a significant impact. "
   }
 
 }

@@ -1,0 +1,11 @@
+
+@media only screen and (max-width: 600px) {
+.solve_and_make img{
+  height: 500px;
+  width: auto;
+}
+
+.solve_and_make .caption-2{
+  font-size: 32pt;
+}
+}
